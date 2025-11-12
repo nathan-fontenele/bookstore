@@ -1,11 +1,13 @@
-﻿namespace Livraria.Domain.Interfaces
+﻿using Livraria.Domain.Entities;
+
+namespace Livraria.Domain.Interfaces
 {
     public interface IBookRepository
     {
-        Task<IEnumerable<Entities.Books>> GetAllBooksAsync();
-        Task<Entities.Books?> GetBookByIdAsync(Guid id);
-        Task AddBookAsync(Entities.Books book);
-        Task UpdateBookAsync(Entities.Books book);
+        Task<IEnumerable<Books>> GetAllBooksAsync();
+        Task<Books?> GetBookByIdAsync(Guid id);
+        Task<Books> AddBookAsync(Books book);
+        Task UpdateBookAsync(Books book);
         Task DeleteBookAsync(Guid id);
     }
 }
