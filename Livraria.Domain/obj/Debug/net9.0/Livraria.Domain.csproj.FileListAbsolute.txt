@@ -1,0 +1,12 @@
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Domain\bin\Debug\net9.0\Livraria.Domain.deps.json
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Domain\bin\Debug\net9.0\Livraria.Domain.dll
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Domain\bin\Debug\net9.0\Livraria.Domain.pdb
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Domain\obj\Debug\net9.0\Livraria.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Domain\obj\Debug\net9.0\Livraria.Domain.AssemblyInfoInputs.cache
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Domain\obj\Debug\net9.0\Livraria.Domain.AssemblyInfo.cs
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Domain\obj\Debug\net9.0\Livraria.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Domain\obj\Debug\net9.0\Livraria.Domain.sourcelink.json
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Domain\obj\Debug\net9.0\Livraria.Domain.dll
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Domain\obj\Debug\net9.0\refint\Livraria.Domain.dll
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Domain\obj\Debug\net9.0\Livraria.Domain.pdb
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Domain\obj\Debug\net9.0\ref\Livraria.Domain.dll

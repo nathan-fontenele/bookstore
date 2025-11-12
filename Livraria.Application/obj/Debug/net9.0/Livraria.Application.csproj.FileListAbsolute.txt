@@ -1,0 +1,16 @@
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\bin\Debug\net9.0\Livraria.Application.deps.json
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\bin\Debug\net9.0\Livraria.Application.dll
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\bin\Debug\net9.0\Livraria.Application.pdb
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\bin\Debug\net9.0\Livraria.Domain.dll
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\bin\Debug\net9.0\Livraria.Domain.pdb
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\obj\Debug\net9.0\Livraria.Application.csproj.AssemblyReference.cache
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\obj\Debug\net9.0\Livraria.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\obj\Debug\net9.0\Livraria.Application.AssemblyInfoInputs.cache
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\obj\Debug\net9.0\Livraria.Application.AssemblyInfo.cs
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\obj\Debug\net9.0\Livraria.Application.csproj.CoreCompileInputs.cache
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\obj\Debug\net9.0\Livraria.Application.sourcelink.json
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\obj\Debug\net9.0\Livraria.422A9370.Up2Date
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\obj\Debug\net9.0\Livraria.Application.dll
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\obj\Debug\net9.0\refint\Livraria.Application.dll
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\obj\Debug\net9.0\Livraria.Application.pdb
+C:\Users\Nathan Fontenele\Documents\Projetos\Livraria\Livraria.Application\obj\Debug\net9.0\ref\Livraria.Application.dll

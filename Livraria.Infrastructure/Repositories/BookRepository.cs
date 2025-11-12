@@ -30,7 +30,16 @@ namespace Livraria.Infrastructure.Repositories
 
         public Task DeleteBookAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var book = _context.Books.FirstOrDefault(b => b.Id == id);
+            if (book is not null)
+            {
+                _context.Books.Remove(book);
+                return _context.SaveChangesAsync();
+            }
+            else
+            {
+                throw new InvalidOperationException($"Book id not found.");
+            }
         }
 
         public async Task<IEnumerable<Books>> GetAllBooksAsync()
