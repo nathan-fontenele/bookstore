@@ -21,6 +21,7 @@
         JovemAdulto,
         Poesia,
         Arte,
-        Quadrinhos
+        Quadrinhos,
+        NA
     }
 }

@@ -1,0 +1,75 @@
+﻿@page "/newbook"
+
+<PageTitle>New Book</PageTitle>
+
+<div class="row justify-content-center">
+    <div class="col-6">
+        <EditForm Enhance="true" method="post" FormName="NewBookForm" OnValidSubmit="AddBook" Model="Book" id="AddBook">
+            <h3>New book</h3>
+
+            <div class="mb-3">
+                <label for="Title" class="form-label>">Title</label>
+                <InputText id="Title" class="form-control" @bind-Value="Book.Title" />
+            </div>
+
+            <div class="mb-3">
+                <label for="Author" class="form-label>">Author</label>
+                <InputText id="Author" class="form-control" @bind-Value="Book.Author" />
+            </div>
+
+            <div class="mb-3">
+                <label for="BookCover" class="form-label>">Book Cover</label>
+                <InputText id="BookCover" class="form-control" @bind-Value="Book.BookCover" />
+            </div>
+
+            <div class="mb-3">
+                <label for="ReleaseDate" class="form-label>">Release Date</label>
+                <InputDate id="ReleaseDate" class="form-control" @bind-Value="Book.ReleaseDate" />
+            </div>
+
+            <div class="mb-3">
+                <label for="Publisher" class="form-label>">Publisher</label>
+                <InputSelect id="Publisher" class="form-select" @bind-Value="Book.Publisher">
+                    <option value="0" ">Select a publisher</option>
+                    @foreach (var publisher in Enum.GetValues<Publisher>())
+                    {
+                        <option value="@publisher">@publisher</option>
+                    }
+                </InputSelect>
+            </div>
+
+            <div class="mb-3">
+                <label for="Category" class="form-label>">Category</label>
+                <InputSelect id="Category" class="form-select" @bind-Value="Book.Category">
+                    <option value="0" ">Select a category</option>
+                    @foreach (var category in Enum.GetValues<Category>())
+                    {
+                        <option value="@category">@category</option>
+                    }
+                </InputSelect>
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Add Book</button>
+                <a href="/books" class="btn btn-secondary ms-3" data-enhance-nav="false">
+                    Return to books</a>
+            </div>
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    [SupplyParameterFromForm(Name = "NewBookForm")]
+    public Books? Book { get; set; }
+
+    protected override void OnInitialized() =>
+        Book ??= new Books(Guid.NewGuid(), null, null, null, DateTime.Now, Publisher.NA, Category.NA);
+
+    private async Task AddBook()
+    {
+        await BookRepository.AddBookAsync(Book!);
+        NavigationManager.NavigateTo("/books");
+    }
+}

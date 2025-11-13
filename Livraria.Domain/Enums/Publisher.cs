@@ -21,6 +21,7 @@
         EditoraModerna,
         EditoraAtlas,
         EditoraVozes,
-        EditoraGloboLivros
+        EditoraGloboLivros,
+        NA
     }
 }
