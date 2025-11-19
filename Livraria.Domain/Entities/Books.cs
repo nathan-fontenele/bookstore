@@ -30,6 +30,8 @@ namespace Livraria.Domain.Entities
         [EnumDataType(typeof(Category), ErrorMessage = "Categoria é obrigatória")]
         public Category Category { get; set; }
 
+        public Books() { }
+
         public Books(Guid id, string? title, string? author, string? bookCover, DateTime releaseDate, Publisher publisher, Category category)
         {
             Id = id;

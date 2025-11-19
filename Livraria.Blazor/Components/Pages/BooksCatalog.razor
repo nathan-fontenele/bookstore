@@ -1,0 +1,38 @@
+﻿@page "/books"
+@attribute [StreamRendering] 
+<!--Para exibir os dados conforme forem carregando-->
+
+<h3>Catalog Books</h3>
+
+<p>
+    <a href="/newbook">Create a new book</a>
+</p>
+
+@if (BooksList is null)
+{
+    <img src="images/loading.gif" width="292" height="247" />
+}
+else if (!BooksList.Any())
+{
+    <p><em>No books found.</em></p>
+}
+else
+{
+    <div class="row">
+        @foreach (var book in BooksList)
+        {
+            <BookCard Book="@book" />
+        }
+    </div>
+}
+
+@code {
+    IEnumerable<Domain.Entities.Books>? BooksList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(500);
+        BooksList = await BookRepository.GetAllBooksAsync();
+    }
+
+}

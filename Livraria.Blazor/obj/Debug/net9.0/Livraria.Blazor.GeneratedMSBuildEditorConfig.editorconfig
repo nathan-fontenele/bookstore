@@ -26,6 +26,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Nathan Fontenele/Documents/Projetos/Livraria/Livraria.Blazor/Components/Pages/BookCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCb29rQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nathan Fontenele/Documents/Projetos/Livraria/Livraria.Blazor/Components/Pages/BooksCatalog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCb29rc0NhdGFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Nathan Fontenele/Documents/Projetos/Livraria/Livraria.Blazor/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Nathan Fontenele/Documents/Projetos/Livraria/Livraria.Blazor/Components/Pages/NewBook.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOZXdCb29rLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nathan Fontenele/Documents/Projetos/Livraria/Livraria.Blazor/Components/Pages/UpdateBook.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVcGRhdGVCb29rLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nathan Fontenele/Documents/Projetos/Livraria/Livraria.Blazor/Components/Routes.razor]
