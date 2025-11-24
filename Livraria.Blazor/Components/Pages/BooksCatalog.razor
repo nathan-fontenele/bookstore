@@ -22,7 +22,7 @@ else
     <div class="row">
         @foreach (var book in BooksList)
         {
-            <BookCard Book="@book" />
+            <BookCard Book="@book" OnBookDeleted="OnBookDeleted" />
         }
     </div>
 }
