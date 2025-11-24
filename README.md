@@ -1,20 +1,20 @@
-# 📚 Livraria - Clean Architecture Study
+# Livraria - Clean Architecture Study
 
-Este projeto é uma aplicação de gerenciamento de livraria desenvolvida com **.NET 8** e **Blazor Server**, criada com o objetivo principal de estudar e aplicar os conceitos de **Clean Architecture** (Arquitetura Limpa).
+Este projeto é uma aplicação de gerenciamento de livraria desenvolvida com **.NET 9** e **Blazor Server**, criada com o objetivo principal de estudar e aplicar os conceitos de **Clean Architecture** (Arquitetura Limpa).
 
-## 🎯 Objetivo
+## Objetivo
 
 O intuito deste projeto é demonstrar como estruturar uma aplicação moderna separando responsabilidades, facilitando a testabilidade e a manutenção. O foco não é apenas o CRUD, mas sim como as camadas interagem entre si respeitando as regras de dependência.
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-- **.NET 8**
+- **.NET 9**
 - **Blazor Server** (Interactive Server)
 - **Entity Framework Core**
 - **SQLite**
 - **Bootstrap 5**
 
-## 🏗️ Estrutura do Projeto (Clean Architecture)
+## Estrutura do Projeto (Clean Architecture)
 
 A solução está dividida em projetos que representam as camadas da arquitetura:
 
@@ -40,14 +40,14 @@ A camada de apresentação. Depende da Aplicação e Infraestrutura (para injeç
 ### 5. **Livraria.CrossCutting** (Transversal)
 Responsável pela configuração de Injeção de Dependência (IoC), garantindo que a camada de Apresentação não precise conhecer detalhes concretos da Infraestrutura diretamente.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-- ✅ **Listagem de Livros**: Visualização em cards.
-- ✅ **Cadastro**: Adição de novos livros com validação.
-- ✅ **Edição**: Atualização de dados existentes.
-- ✅ **Exclusão**: Remoção com diálogo de confirmação customizado.
+- **Listagem de Livros**: Visualização em cards.
+- **Cadastro**: Adição de novos livros com validação.
+- **Edição**: Atualização de dados existentes.
+- **Exclusão**: Remoção com diálogo de confirmação customizado.
 
-## 👣 Como Rodar
+## Como Rodar
 
 1. Certifique-se de ter o **.NET SDK** instalado.
 2. Clone o repositório.
