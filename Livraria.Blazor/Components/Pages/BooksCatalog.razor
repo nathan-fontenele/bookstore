@@ -1,5 +1,6 @@
 ﻿@page "/books"
 @attribute [StreamRendering] 
+@rendermode InteractiveServer
 <!--Para exibir os dados conforme forem carregando-->
 
 <h3>Catalog Books</h3>
@@ -30,6 +31,12 @@ else
     IEnumerable<Domain.Entities.Books>? BooksList;
 
     protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(500);
+        BooksList = await BookRepository.GetAllBooksAsync();
+    }
+
+    private async Task OnBookDeleted()
     {
         await Task.Delay(500);
         BooksList = await BookRepository.GetAllBooksAsync();

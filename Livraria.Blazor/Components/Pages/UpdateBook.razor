@@ -3,86 +3,18 @@
 
 <PageTitle>Update Book</PageTitle>
 
-@if (Book is not null)
-{
-    <div class="row justify-content-center">
-        <div class="col-6">
-            <EditForm Model="Book" OnValidSubmit="UpdateBookAsync" FormName="UpdateBookForm">
-
-                <h3>Livro: @Id</h3>
-                <input type="hidden" name="Book.Id" value="@Book.Id" />
-
-                <div class="mb-3">
-                    <label for="Title" class="form-label">Title</label>
-                    <InputText id="Title" class="form-control" @bind-Value="Book.Title" />
-                    <ValidationMessage For="() => Book.Title" />
-                </div>
-
-                <div class="mb-3">
-                    <label for="Author" class="form-label">Author</label>
-                    <InputText id="Author" class="form-control" @bind-Value="Book.Author" />
-                    <ValidationMessage For="() => Book.Author" />
-                </div>
-
-                <div class="mb-3">
-                    <label for="BookCover" class="form-label">Book Cover</label>
-                    <InputText id="BookCover" class="form-control" @bind-Value="Book.BookCover" />
-                    <ValidationMessage For="() => Book.BookCover" />
-                </div>
-
-                <div class="mb-3">
-                    <label for="ReleaseDate" class="form-label">Release Date</label>
-                    <InputDate id="ReleaseDate" class="form-control" @bind-Value="Book.ReleaseDate" />
-                </div>
-
-                <div class="mb-3">
-                    <label for="Publisher" class="form-label">Publisher</label>
-                    <InputSelect id="Publisher" class="form-select" @bind-Value="Book.Publisher">
-                        <option value="">Select a publisher</option>
-                        @foreach (var publisher in Enum.GetValues<Publisher>())
-                        {
-                            <option value="@publisher">@publisher</option>
-                        }
-                    </InputSelect>
-                </div>
-
-                <div class="mb-3">
-                    <label for="Category" class="form-label">Category</label>
-                    <InputSelect id="Category" class="form-select" @bind-Value="Book.Category">
-                        <option value="">Select a category</option>
-                        @foreach (var category in Enum.GetValues<Category>())
-                        {
-                            <option value="@category">@category</option>
-                        }
-                    </InputSelect>
-                </div>
-
-                <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">Update</button>
-                    <a href="/books" class="btn btn-secondary ms-3" data-enhance-nav="false">
-                        Return to books
-                    </a>
-                </div>
-                <DataAnnotationsValidator />
-                <ValidationSummary />
-            </EditForm>
-        </div>
+<div class="row justify-content-center">
+    <div class="col-6">
+            <BookForm IsEdit="true" OnValidBookSubmit="UpdateBookAsync" Id="Id"/>
     </div>
-}
+</div>
+
 
 @code {
     [Parameter]
     public Guid Id { get; set; }
 
-    public Books? Book { get; set; }
-        
-    protected override async Task OnInitializedAsync()
-    {
-        if (Book is null)
-            Book = await BookRepository.GetBookByIdAsync(Id);
-    }
-
-    private async Task UpdateBookAsync()
+    private async Task UpdateBookAsync(Books Book)
     {
         await BookRepository.UpdateBookAsync(Book);
         NavigationManager.NavigateTo("/books");

@@ -1,0 +1,30 @@
+﻿@if (Display)
+{
+    <div class="confirm-dialog-container">
+        <div class="confirm-dialog">
+            @ChildContent
+            <div class="d-flex flex-row justify-content-end mt-5">
+                <button class="btn btn-primary" @onclick="() => OnCancel.InvokeAsync()">Cancel</button>
+                <button class="btn btn-danger" @onclick="() => OnDelete.InvokeAsync()">Delete</button>
+            </div>
+        </div>
+    </div>
+}
+
+@code
+{
+    [Parameter]
+    public bool Display { get; set; }
+
+    [Parameter]
+    public EventCallback<bool> DisplayChanged {get; set;}
+
+    [Parameter]
+    public EventCallback OnCancel { get; set; }
+
+    [Parameter]
+    public EventCallback OnDelete { get; set; }
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}

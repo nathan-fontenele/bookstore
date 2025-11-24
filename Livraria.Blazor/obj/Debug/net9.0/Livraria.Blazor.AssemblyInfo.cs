@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Livraria.Blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e8f35834f136da90b6bc249681f80860b825099")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09836ff93ab28f9e33806f2b94265dc3eaf0bcb4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Livraria.Blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Livraria.Blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
